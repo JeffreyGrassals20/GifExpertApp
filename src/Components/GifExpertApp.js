@@ -8,9 +8,9 @@ const GifExpertApp  =() => {
 
     const [categories, setCategories] = useState(brands)
 
-    const handleAdd = () => {
+    /*const handleAdd = () => {
         setCategories([...categories, 'new one'])
-    }
+    }*/
 
     return (
         <>
@@ -20,9 +20,9 @@ const GifExpertApp  =() => {
            
             <ol>
                 {
-                    categories.map( category => {
-                        return <li key = {category}> {category} </li>
-                   })
+                    categories.map( category => 
+                        <GifGrid key={category} category={category}/>
+                   )
                 }
             </ol>
 

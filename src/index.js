@@ -4,9 +4,10 @@ import './index.css';
 import GifExpertApp from './Components/GifExpertApp'
 
 
-const divRoot = document.querySelector('#root')
 
-ReactDOM.render(<GifExpertApp/>,divRoot)
+
+
+ReactDOM.render(<GifExpertApp/>, document.getElementById('root'))
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
